@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>{{ title }}</h1>
+  
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Backend Communication</h5>
+      <p class="card-text" *ngIf="loading">Loading message from backend...</p>
+      <p class="card-text" *ngIf="!loading">{{ greeting }}</p>
+      <button class="btn btn-primary" (click)="fetchGreeting()">Refresh</button>
+    </div>
+  </div>
+</div>
